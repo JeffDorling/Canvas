@@ -12,7 +12,7 @@ balance = 0
 
 #Question in App on what to do 
 loop do
-puts "What would you like to do? (options: balance,deposit,exit)"
+puts "What would you like to do? (options: balance,deposit,withdraw,exit)"
 
 choice= gets.chomp
 
@@ -25,7 +25,14 @@ elsif choice == "deposit"
     puts "How much will you be depositing?"
     deposit= gets.chomp.to_i
     balance += deposit
-    puts "Your Balance is $#{balance}"
+    puts "Your new balance is $#{balance}"
+
+#Withdraw Choice
+elsif choice == "withdraw" 
+    puts "How much will you be withdrawing?"
+    withdraw= gets.chomp.to_i 
+    balance -= withdraw
+    puts "Your new balance is $#{balance}"
 
 #Exit Choice
 elsif choice == "exit"
