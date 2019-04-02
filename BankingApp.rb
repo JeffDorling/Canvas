@@ -12,7 +12,7 @@ balance = 0
 
 #Question in App on what to do 
 loop do
-system 'clear'
+puts "\e[2J\e[f"
 
 puts "What would you like to do? (options: balance,deposit,withdraw,exit)"
 
